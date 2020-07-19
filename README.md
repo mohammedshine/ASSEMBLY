@@ -17,11 +17,23 @@ Each register can be addressed as 32 bit value
 #### EBX
 #### ECX
 #### EDX
-#### ESI Source index
-#### EDI Destination Index
+#### ESI Source index for string operations
+#### EDI Destination Index for string operations
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#### ESP Extended Stack pointer always points to top of the stack
+#### EBP Extended Base  pointer
 
 The 4 registers EAX, EBX, ECX, EDX has a subregister of 16 bits and 2 subregisters of 8bits each.
 
+- AX is the primary accumulator; it is used in input/output and most arithmetic instructions. For example, in multiplication operation, one operand is stored in EAX or AX or AL register according to the size of the operand.
+
+- BX is known as the base register, as it could be used in indexed addressing.
+
+- CX is known as the count register, as the ECX, CX registers store the loop count in iterative operations.
+
+- DX is known as the data register. It is also used in input/output operations. It is also used with AX register along with DX for multiply and divide operations involving large values.
+
+#### EIP Exteded Instruction Pointer always points to the next instruction to be executed.
 
 # Simple Assembly code
 - global _start : the directive global tells the linker that the entry point of our program is _start.
