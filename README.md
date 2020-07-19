@@ -20,7 +20,7 @@ Each register can be addressed as 32 bit value
 #### ESI Source index for string operations
 #### EDI Destination Index for string operations
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#### ESP Extended Stack pointer always points to top of the stack
+#### ESP Extended Stack pointer always points to top of the stack which allows PUSH and POP operations
 #### EBP Extended Base  pointer
 
 The 4 registers EAX, EBX, ECX, EDX has a subregister of 16 bits and 2 subregisters of 8bits each.
@@ -57,3 +57,4 @@ Examine register
 
 gdb ./out
 ```
+# GDB GEF
